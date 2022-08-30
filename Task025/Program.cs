@@ -1,2 +1,18 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿//  Напишите цикл, который принимает на вход два числа (A и B) и 
+//  возводит число A в натуральную степень B.
+
+// 3, 5 -> 243 (3⁵)
+
+// 2, 4 -> 16
+
+System.Console.WriteLine("Введите число А: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine("Введите число B: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+
+int number = num1;
+for (int i = 1; i < num2; i++)
+{
+    number *= num1;
+}
+System.Console.WriteLine($"{num1}, {num2} → {number}");
